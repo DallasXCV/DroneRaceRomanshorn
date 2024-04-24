@@ -1,0 +1,173 @@
+// Include any default variable overrides here (though functions won't be available)
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Then add additional custom code here
+
+:root {
+    @font-face {
+        font-family: "RobotoLight";
+        src: url(/src/assets/font/Roboto-Light.ttf);
+    }
+    @font-face {
+        font-family: "RobotoRegular";
+        src: url(/src/assets/font/Roboto-Regular.ttf);
+    }
+    @font-face {
+        font-family: "RobotoBold";
+        src: url(/src/assets/font/Roboto-Bold.ttf);
+    }
+    --bg-color: #000;
+    --text-color: #fff;
+    --title-color: #f39200;
+    --title-font: "RobotoBold";
+    --text-font: "RobotoLight";
+    --undertitle-font: "RobotoRegular";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: 2.5rem;
+}
+h2 {
+    font-family: var(--title-font);
+    color: var(--undertitle-color);
+    font-size: 2rem;
+}
+h3 {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    font-size: 1.5rem;
+}
+p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    background-color: var(--bg-color);
+
+    header {
+        div {
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+        .navbar-toggler {
+            border-color: var(--text-color);
+        }
+        .navbar-toggler:hover {
+            border-color: var(--title-color);
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        div {
+            ul {
+                li {
+                    .nav-link {
+                        color: var(--text-color);
+                        font-family: var(--title-font);
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .video-title {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+            .bi-play-circle {
+                color: var(--title-color);
+                font-size: 3rem;
+            }
+        }
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%; /* Adjust as needed */
+            overflow: hidden;
+            z-index: -1;
+            video {
+                background-color: rgba(255, 192, 203, 0.329);
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .tagesablauf {
+            border-bottom: 2px solid var(--text-color);
+            margin-bottom: 2.5em;
+            .bi-caret-down-fill {
+                transition: transform .25s ease;
+                cursor: pointer;
+                color: var(--text-color);
+                margin-right: 0.5em;
+                font-size: 2rem;
+            }
+            .rotated {
+                transform: rotate(-90deg); 
+            }
+        }
+        .tagesablauf-content {
+            display: none;
+            button{
+                background-color: var(--title-color);
+                color: var(--text-color);
+                font-family: var(--title-font);
+                cursor: pointer;
+                
+            }
+            button:hover{
+                background-color: var(--text-color);
+                color: var(--title-color);
+            }
+        }
+        
+    }
+    footer{
+        background-color: var(--title-color);
+        ul{
+            list-style-type: none;
+            padding-left: 0;
+            li{
+                p{
+                    color: var(--text-color);
+                    font-family: var(--title-font);
+                }
+                a{
+                    text-decoration: none;
+                    color: var(--text-color);
+                    font-family: var(--title-font);
+                }
+                .nav-link{
+                    color: var(--text-color);
+                    font-family: var(--title-font);
+                }
+            }
+        }
+        .bi-arrow-up-square{
+            color: var(--text-color);
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+}
