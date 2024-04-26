@@ -6,6 +6,11 @@
 - Bootstrap (version 5.3.3)
 - Bootstrap-icons
 
+### Tipps
+
+Install the extension Live Sass Compiler, to "watch" the SCSS Code.
+[LiveSassCompiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
+
 ### Installing
 
 To get a local copy up and running, follow these simple steps:
