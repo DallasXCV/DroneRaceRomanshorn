@@ -12152,7 +12152,6 @@ body main .location-row iframe {
 body main .location-row .location-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
 }
 body main .sponsoren-row {
