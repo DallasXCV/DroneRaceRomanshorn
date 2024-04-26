@@ -11991,33 +11991,29 @@ textarea.form-control-lg {
   padding: 0;
 }
 
-h1, .h1 {
+body {
+  background-color: var(--bg-color);
+}
+body h1, body .h1 {
   font-family: var(--title-font);
   color: var(--title-color);
   font-size: 2.5rem;
 }
-
-h2, .h2 {
+body h2, body .h2 {
   font-family: var(--title-font);
   color: var(--undertitle-color);
   font-size: 2rem;
 }
-
-h3, .h3 {
+body h3, body .h3 {
   font-family: var(--title-font);
   color: var(--title-color);
   font-size: 1.5rem;
 }
-
-p {
+body p {
   font-family: var(--text-font);
   color: var(--text-color);
   font-size: 1rem;
   margin-bottom: 0.5rem;
-}
-
-body {
-  background-color: var(--bg-color);
 }
 body :target {
   padding-top: 125px;
