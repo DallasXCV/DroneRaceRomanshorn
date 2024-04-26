@@ -12183,10 +12183,6 @@ body footer ul li a {
 body footer ul li a:hover {
   color: var(--bg-color);
 }
-body footer ul li .nav-link {
-  color: var(--text-color);
-  font-family: var(--title-font);
-}
 body footer .bi-instagram {
   color: var(--text-color);
   font-size: 2rem;

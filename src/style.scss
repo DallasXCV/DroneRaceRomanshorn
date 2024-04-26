@@ -1,8 +1,9 @@
-// Include any default variable overrides here (though functions won't be available)
+// CSS Bootstrap Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-// Then add additional custom code here
 
+// Variables
 :root {
+    // Import Fonts
     @font-face {
         font-family: "RobotoLight";
         src: url(/src/assets/font/Roboto-Light.ttf);
@@ -15,6 +16,7 @@
         font-family: "RobotoBold";
         src: url(/src/assets/font/Roboto-Bold.ttf);
     }
+    // Colors & Fonts
     --bg-color: #000;
     --text-color: #fff;
     --title-color: #f39200;
@@ -23,12 +25,16 @@
     --undertitle-font: "RobotoRegular";
 }
 
+// Global Styles
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    // Background Color
+    background-color: var(--bg-color);
+    // Fonts and Colors assigned to HTML Elements
     h1 {
         font-family: var(--title-font);
         color: var(--title-color);
@@ -50,7 +56,7 @@ body {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
-    background-color: var(--bg-color);
+    // Stops Header from Overlapping Content
     :target {
         padding-top: 125px;
         margin-top: -125px;
@@ -59,6 +65,7 @@ body {
         .navbar {
             background-color: transparent;
         }
+        // Navbar turns to black while scrolling
         .scrolled {
             background-color: #000;
             transition: background-color 0.5s ease;
@@ -78,6 +85,7 @@ body {
         .navbar-toggler:focus {
             box-shadow: none;
         }
+        // Styling for Navbar Links
         div {
             ul {
                 li {
@@ -93,6 +101,7 @@ body {
         }
     }
     main {
+        // Styling for Video Section
         .video-section {
             height: 103vh;
             .video-title {
@@ -112,6 +121,7 @@ body {
                     transition: 0.3s ease-in-out;
                 }
             }
+            // Video Desktop Sizing & Mobile
             .video-container {
                 width: 0%;
                 height: 100vh;
@@ -131,6 +141,7 @@ body {
         }
         .about-row {
             margin-bottom: 5em;
+            // Border behind Image
             img {
                 box-shadow:
                     20px -20px 0 -5px black,
@@ -140,6 +151,7 @@ body {
         }
         .rahmenprogramm-row {
             margin-bottom: 5em;
+            // Youtube link styling
             a {
                 text-decoration: none;
                 color: var(--text-color);
@@ -148,27 +160,32 @@ body {
             a:hover {
                 color: var(--title-color);
             }
+            // Spacing Title to Image and Text
             .rahmenprogramm-titletext {
                 margin-top: 1em;
                 margin-bottom: 2em;
             }
         }
+        // Styling for Tagesablauf
         .tagesablauf-border {
             border-bottom: 2px solid var(--text-color);
             margin-bottom: 2.5em;
             .icon-container {
                 margin-right: 0.5em;
                 transition: transform 0.25s ease;
+                // Arrow Icon Styling
                 .bi-caret-down-fill {
                     cursor: pointer;
                     color: var(--text-color);
                     font-size: 2rem;
                 }
             }
+            // Arrow Icon Animation
             .rotated {
                 transform: rotate(-90deg);
             }
         }
+        // Styling for Tagesablauf Content
         .tagesablauf-content {
             display: none;
             p {
@@ -176,16 +193,19 @@ body {
                     font-family: var(--title-font);
                 }
             }
+            // Border behind Image
             .samstag-img {
                 box-shadow:
                     -20px 20px 0 -5px black,
                     -20px 20px 0 0 #e6007e;
             }
+            // Border behind Image
             .sonntag-img {
                 box-shadow:
                     -20px 20px 0 -5px black,
                     -20px 20px 0 0 #41c0f0;
             }
+            // Styling for Button
             button {
                 background-color: var(--title-color);
                 color: var(--text-color);
@@ -201,11 +221,13 @@ body {
         .location-row {
             margin-top: 5em;
             margin-bottom: 5em;
+            // Border behind Maps
             iframe {
                 box-shadow:
                     20px 20px 0 -5px black,
                     20px 20px 0 0 #95c11f;
             }
+            // Centering Location Text
             .location-container {
                 display: flex;
                 flex-direction: column;
@@ -215,12 +237,14 @@ body {
         }
         .sponsoren-row {
             margin-bottom: 5em;
+            // Sizing for Sponsor Images
             img {
                 width: 65%;
             }
         }
     }
     footer {
+        // Background Color Footer
         background-color: var(--title-color);
         .impressum-container {
             ul {
@@ -243,12 +267,9 @@ body {
                 a:hover {
                     color: var(--bg-color);
                 }
-                .nav-link {
-                    color: var(--text-color);
-                    font-family: var(--title-font);
-                }
             }
         }
+        // Styling Intsgram and Arrow Up Icon
         .bi-instagram {
             color: var(--text-color);
             font-size: 2rem;
@@ -269,6 +290,7 @@ body {
     }
 }
 
+// Mobile Styling Vertical
 @media screen and (max-width: 768px) {
     body {
         main {
@@ -281,7 +303,6 @@ body {
                     }
                 }
             }
-
             .about-row {
                 img {
                     box-shadow: none;
@@ -329,6 +350,7 @@ body {
     }
 }
 
+// Mobile Styling Horizontal
 @media screen and (max-width: 992px) {
     body {
         main {
