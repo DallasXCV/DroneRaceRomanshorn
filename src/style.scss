@@ -251,6 +251,15 @@ body {
                 }
             }
         }
+        .bi-instagram{
+            color: var(--text-color);
+            font-size: 2rem;
+            cursor: pointer;
+            margin-right: .5em;
+        }
+        .bi-instagram:hover{
+            color: var(--bg-color);
+        }
         .bi-arrow-up-square {
             color: var(--text-color);
             font-size: 2rem;
