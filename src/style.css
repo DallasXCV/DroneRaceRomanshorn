@@ -12052,7 +12052,8 @@ body main .video-section {
 body main .video-section .video-title {
   margin-top: 40vh;
 }
-body main .video-section .video-title h1, body main .video-section .video-title .h1 {
+body main .video-section .video-title h2, body main .video-section .video-title .h2 {
+  color: var(--title-color);
   font-size: 3rem;
 }
 body main .video-section .video-title p {

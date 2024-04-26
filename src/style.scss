@@ -106,7 +106,8 @@ body {
             height: 103vh;
             .video-title {
                 margin-top: 40vh;
-                h1 {
+                h2 {
+                    color: var(--title-color);
                     font-size: 3rem;
                 }
                 p {
