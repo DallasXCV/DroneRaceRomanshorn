@@ -115,19 +115,17 @@ body {
             }
             .video-container {
                 width: 0%;
-                height: 100vh; /* Set height to match viewport height */
+                height: 100vh;
                 overflow: hidden;
                 z-index: -1;
                 video {
-                    background-color: rgba(255, 192, 203, 0.329);
-                    min-width: 100%;
+                    opacity: 60%;
+                    max-width: 100%;
                     min-height: 100%;
-                    width: auto;
-                    height: auto;
                     position: absolute;
                     top: 0;
                     bottom: 0;
-                    right: 0;
+                    left: 0;
                     margin: auto;
                 }
             }
@@ -173,8 +171,8 @@ body {
         }
         .tagesablauf-content {
             display: none;
-            p{
-                strong{
+            p {
+                strong {
                     font-family: var(--title-font);
                 }
             }
@@ -217,15 +215,15 @@ body {
         }
         .sponsoren-row {
             margin-bottom: 5em;
-            img{
+            img {
                 width: 65%;
             }
         }
     }
     footer {
         background-color: var(--title-color);
-        .impressum-container{
-            ul{
+        .impressum-container {
+            ul {
                 margin-top: 1em;
             }
         }
@@ -251,13 +249,13 @@ body {
                 }
             }
         }
-        .bi-instagram{
+        .bi-instagram {
             color: var(--text-color);
             font-size: 2rem;
             cursor: pointer;
-            margin-right: .5em;
+            margin-right: 0.5em;
         }
-        .bi-instagram:hover{
+        .bi-instagram:hover {
             color: var(--bg-color);
         }
         .bi-arrow-up-square {
@@ -274,6 +272,16 @@ body {
 @media screen and (max-width: 768px) {
     body {
         main {
+            .video-section {
+                .video-container {
+                    width: 100%; 
+                    height: auto;
+                    video {
+                        object-fit: cover;
+                    }
+                }
+            }
+
             .about-row {
                 img {
                     box-shadow: none;

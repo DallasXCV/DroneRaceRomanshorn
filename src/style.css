@@ -12072,20 +12072,18 @@ body main .video-section .video-title .bi-play-circle:hover {
 }
 body main .video-section .video-container {
   width: 0%;
-  height: 100vh; /* Set height to match viewport height */
+  height: 100vh;
   overflow: hidden;
   z-index: -1;
 }
 body main .video-section .video-container video {
-  background-color: rgba(255, 192, 203, 0.329);
-  min-width: 100%;
+  opacity: 60%;
+  max-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  left: 0;
   margin: auto;
 }
 body main .about-row {
@@ -12212,6 +12210,14 @@ body footer .bi-arrow-up-square:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body main .video-section .video-container {
+    width: 100%;
+    height: auto;
+  }
+  body main .video-section .video-container video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   body main .about-row img {
     box-shadow: none;
   }
